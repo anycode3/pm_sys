@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>移动端预览 · 产业协同平台</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+body{background:#eef2ef}
+.phones{display:flex;gap:28px;flex-wrap:wrap;padding:10px 0 40px}
+.phone-wrap{text-align:center}
+.phone{width:320px;height:660px;border:9px solid #1c211e;border-radius:38px;background:#fff;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 18px 40px rgba(15,42,33,.22);text-align:left}
+.p-status{background:#0e2b21;color:#fff;font-size:11px;padding:6px 16px;display:flex;justify-content:space-between}
+.p-head{padding:12px 16px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;font-weight:700;font-size:15px}
+.p-body{flex:1;overflow:hidden;padding:12px;background:#f7f9f8;display:flex;flex-direction:column;gap:10px}
+.p-tab{background:#fff;border-top:1px solid var(--line);display:flex}
+.p-tab div{flex:1;text-align:center;padding:9px 0 11px;font-size:11px;color:#6b7280}
+.p-tab div.on{color:var(--green-700);font-weight:700}
+.p-tab div span{display:block;font-size:17px;margin-bottom:1px}
+.t-card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 14px;font-size:13.5px}
+.t-card b{font-size:14px}
+.t-card .meta{color:#6b7280;font-size:12px;margin-top:3px}
+.p-btn{background:var(--green-600);color:#fff;border:none;border-radius:8px;padding:8px 0;font-size:13px;font-weight:600;flex:1;margin:0 3px}
+.p-btn.ghost{background:#fff;color:var(--green-700);border:1px solid var(--green-600)}
+.p-input{border:1px solid var(--line);border-radius:9px;padding:9px 12px;font-size:13px;background:#fff;color:#6b7280}
+.p-badge{display:inline-block;font-size:11px;padding:2px 9px;border-radius:12px;font-weight:700}
+.pb-ok{background:#e7f6ec;color:#15803d}.pb-warn{background:#fdf3e3;color:#b45309}.pb-risk{background:#fdeaea;color:#b91c1c}.pb-info{background:#e8f0fe;color:#1d4ed8}.pb-gray{background:#eef1f0;color:#4b5563}
+.p-track{height:6px;border-radius:4px;background:#edf1ef;overflow:hidden;flex:1}
+.p-fill{height:100%;background:linear-gradient(90deg,var(--green-500),var(--green-600))}
+.p-tl{padding-left:18px;position:relative;font-size:12.5px}
+.p-tl::before{content:"";position:absolute;left:5px;top:4px;bottom:4px;width:2px;background:var(--line)}
+.p-tl .it{position:relative;padding-bottom:12px}
+.p-tl .it::before{content:"";position:absolute;left:-17px;top:4px;width:9px;height:9px;border-radius:50%;background:#fff;border:2.5px solid #cbd5d1}
+.p-tl .it.done::before{background:var(--green-600);border-color:var(--green-600)}
+.p-tl .it.cur::before{border-color:var(--green-600)}
+.p-grid4{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
+.p-svc{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 8px;text-align:center;font-size:13px;font-weight:600}
+.p-svc span{display:block;font-size:22px;margin-bottom:4px}
+.chatme{background:var(--green-600);color:#fff;border-radius:12px 12px 2px 12px;padding:9px 12px;font-size:12.5px;align-self:flex-end;max-width:85%}
+.chatai{background:#fff;border:1px solid var(--line);border-radius:12px 12px 12px 2px;padding:9px 12px;font-size:12.5px;max-width:92%;line-height:1.6}
+</style>
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar">
+    <div class="logo"><span class="mark">◆</span><span>产业协同平台<small>内部协作作战系统</small></span></div>
+    <nav class="nav">
+      <div class="nav-group">总览</div>
+      <a href="index.html"><span class="ic">📊</span>驾驶舱</a>
+      <a href="workbench.html"><span class="ic">🗂</span>板块工作台</a>
+      <div class="nav-group">业务</div>
+      <a href="goals.html"><span class="ic">🌳</span>目标树</a>
+      <a href="project.html"><span class="ic">📁</span>项目库</a>
+      <a href="aoa-new.html"><span class="ic">🤝</span>AOA 协作</a>
+      <a href="reports.html"><span class="ic">📈</span>汇报流</a>
+      <a href="knowledge.html"><span class="ic">📚</span>知识库</a>
+      <div class="nav-group">组织</div>
+      <a href="talent.html"><span class="ic">👥</span>人才池</a>
+      <a href="review.html"><span class="ic">🎯</span>考核筛选</a>
+      <a href="training.html"><span class="ic">🎓</span>培训考试</a>
+      <div class="nav-group">服务</div>
+      <a href="service.html"><span class="ic">🔧</span>基层服务</a>
+      <a class="active" href="mobile.html"><span class="ic">📱</span>移动端预览</a>
+    </nav>
+    <div class="sidebar-foot">数据自主存储 · 区块链存证<br>v3.0 原型 · 2026-08-30</div>
+  </aside>
+
+  <main class="main">
+    <div class="topbar">
+      <h1>移动端 · 核心五屏</h1>
+      <div class="search">🔍 移动端定位:执行日常 + 碎片时间处理</div>
+    </div>
+
+    <div class="content">
+      <div class="page-head">
+        <div><h2>移动端预览</h2><div class="sub">轻量于 Web:看任务 / 会签 AOA / 看汇报 / AI 问答 / 扫码提单 · 管理操作仍在 Web 端</div></div>
+      </div>
+
+      <div class="phones">
+
+        <!-- M1 我的任务 -->
+        <div class="phone-wrap"><div class="phone">
+          <div class="p-status"><span>9:41</span><span>5G ▂▄▆ 🔄</span></div>
+          <div class="p-head"><span>我的任务</span><span style="font-weight:400">🔔 3</span></div>
+          <div class="p-body">
+            <div style="font-size:12px;color:#6b7280">今日 3 · 本周 8 · 逾期 0</div>
+            <div class="t-card" style="border-left:4px solid var(--risk)"><b>T-1024 溯源系统部署 · 设备联调</b><div class="meta">🟥 高 · 截止 09-05(剩 6 天)</div><div style="display:flex;align-items:center;gap:8px;margin-top:8px"><div class="p-track"><div class="p-fill" style="width:60%"></div></div><b style="font-size:12px">60%</b></div></div>
+            <div class="t-card" style="border-left:4px solid var(--warn)"><b>T-1031 巡检数据录入</b><div class="meta">🟡 中 · 明天 18:00 截止</div></div>
+            <div class="t-card" style="border-left:4px solid var(--info)"><b>T-1033 操作手册 v2 编写</b><div class="meta">🔵 低 · 本周五 · 完成得 🐼+8</div></div>
+            <div style="background:#e8f0fe;border-radius:10px;padding:9px 12px;font-size:12px;color:#1e40af">🤖 你有 1 个 AOA 待会签(18:00 截止)</div>
+          </div>
+          <div class="p-tab"><div class="on"><span>📋</span>任务</div><div><span>🤝</span>AOA</div><div><span>📈</span>汇报</div><div><span>🤖</span>AI</div><div><span>👤</span>我的</div></div>
+        </div><div style="margin-top:10px;font-size:13px;color:#6b7280">M1 我的任务</div></div>
+
+        <!-- M2 AOA 确认 -->
+        <div class="phone-wrap"><div class="phone">
+          <div class="p-status"><span>9:41</span><span>5G ▂▄▆ 🔄</span></div>
+          <div class="p-head"><span>AOA · 待我确认 2</span><span class="p-badge pb-warn">18:00 截止</span></div>
+          <div class="p-body">
+            <div class="t-card"><b>AOA-2026-0830-01</b><div class="meta">育苗棚建设(第 2 批)· ¥ 380 万 · 发起:王建国</div></div>
+            <div class="p-tl">
+              <div class="it done"><b>业务确认 ✓</b><div style="color:#6b7280">王建国 09:40</div></div>
+              <div class="it cur"><b>财务确认 · 待确认</b><div style="color:#6b7280">钱总(剩 4 小时)</div></div>
+              <div class="it"><b>执行层会签(含我)</b></div>
+              <div class="it"><b>终审 · 张远山</b></div>
+            </div>
+            <div style="font-size:12px;color:#6b7280">📎 附件:评估表 / 视频 × 2 / 照片 × 6</div>
+            <div class="p-input" style="min-height:64px">意见(≥20 字必填)…</div>
+            <div style="display:flex"><button class="p-btn">同意并提交</button><button class="p-btn ghost" style="color:#dc2626;border-color:#f3c2c2">提出异议</button></div>
+          </div>
+          <div class="p-tab"><div><span>📋</span>任务</div><div class="on"><span>🤝</span>AOA</div><div><span>📈</span>汇报</div><div><span>🤖</span>AI</div><div><span>👤</span>我的</div></div>
+        </div><div style="margin-top:10px;font-size:13px;color:#6b7280">M2 AOA 确认(强制意见)</div></div>
+
+        <!-- M3 汇报查看 -->
+        <div class="phone-wrap"><div class="phone">
+          <div class="p-status"><span>9:41</span><span>5G ▂▄▆ 🔄</span></div>
+          <div class="p-head"><span>汇报 · 自动生成</span></div>
+          <div class="p-body">
+            <div class="t-card"><b>P-001 第 35 周周报</b><div class="meta">62% · 卡点 1 项 · 08-30 生成</div></div>
+            <div class="t-card" style="flex:1">
+              <b style="font-size:14px">P-001 · 第 35 周</b>
+              <div style="margin-top:8px;font-size:12.5px;line-height:1.9">📈 进度 58% -> 62% <span class="p-badge pb-ok">▲4%</span><br>✅ 完成 6 项任务<br>👥 参与 8 人 · 312h<br>📷 现场图 14 张<br>🟡 用地审批卡点 21 天<br>⏭ 下周:溯源联调 / 用地催办…</div>
+              <div style="font-size:11.5px;color:#6b7280;margin-top:8px;border-top:1px dashed var(--line);padding-top:8px">数据自动聚合 · 逐条可下钻溯源</div>
+            </div>
+          </div>
+          <div class="p-tab"><div><span>📋</span>任务</div><div><span>🤝</span>AOA</div><div class="on"><span>📈</span>汇报</div><div><span>🤖</span>AI</div><div><span>👤</span>我的</div></div>
+        </div><div style="margin-top:10px;font-size:13px;color:#6b7280">M3 汇报查看(零填报)</div></div>
+
+        <!-- M4 AI 问答 -->
+        <div class="phone-wrap"><div class="phone">
+          <div class="p-status"><span>9:41</span><span>5G ▂▄▆ 🔄</span></div>
+          <div class="p-head"><span>🤖 AI 助手</span><span class="p-badge pb-ok">带来源</span></div>
+          <div class="p-body">
+            <div class="chatme">川贝母种植的海拔要求是什么?</div>
+            <div class="chatai">依据《川贝母栽培规范 v3》:<br>① 适宜海拔 <b>3000-4500 米</b>;<br>② 忌连作,同地块间隔 3 年以上;<br>③ 疏松砂质壤土,pH 6.5-7.5。<div style="margin-top:6px;font-size:11.5px;color:#6b7280;border-top:1px dashed var(--line);padding-top:6px">📎 来源:王建国上传 · 置信度 高</div></div>
+            <div class="chatai" style="background:#f0fdf4">💡 相关:红原基地选址报告含海拔与土壤检测</div>
+            <div style="flex:1"></div>
+            <div style="display:flex;gap:6px"><div class="p-input" style="flex:1">问点什么…</div><button class="p-btn" style="flex:none;padding:8px 14px;margin:0">🎤</button></div>
+          </div>
+          <div class="p-tab"><div><span>📋</span>任务</div><div><span>🤝</span>AOA</div><div><span>📈</span>汇报</div><div class="on"><span>🤖</span>AI</div><div><span>👤</span>我的</div></div>
+        </div><div style="margin-top:10px;font-size:13px;color:#6b7280">M4 AI 问答(随身知识库)</div></div>
+
+        <!-- M5 扫码提单 -->
+        <div class="phone-wrap"><div class="phone">
+          <div class="p-status"><span>9:41</span><span>5G ▂▄▆ 🔄</span></div>
+          <div class="p-head"><span>📷 扫码提单</span><span class="p-badge pb-info">免登录</span></div>
+          <div class="p-body">
+            <div style="background:linear-gradient(135deg,#2d6a4f,#1b4332);border-radius:12px;height:130px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:13px">▢ &nbsp;▢ &nbsp;<b style="border:3px solid #7dd3a8;border-radius:6px;padding:6px 10px">▣</b>&nbsp; ▢<div style="position:absolute">对准现场二维码</div></div>
+            <div style="font-size:12px;color:#6b7280">位置:绿道 3 号驿站(扫码自动带出)</div>
+            <div class="p-grid4">
+              <div class="p-svc"><span>🔧</span>报修</div>
+              <div class="p-svc"><span>🛒</span>集采</div>
+              <div class="p-svc"><span>💰</span>销售</div>
+              <div class="p-svc"><span>🏢</span>物业</div>
+            </div>
+            <div class="p-input">📷 拍照(必填)</div>
+            <div class="p-input">一句话描述:水管爆裂了…</div>
+            <button class="p-btn" style="width:100%;margin:0;padding:11px 0">提交(30 秒完成)</button>
+          </div>
+          <div class="p-tab"><div><span>📋</span>任务</div><div><span>🤝</span>AOA</div><div><span>📈</span>汇报</div><div><span>🤖</span>AI</div><div><span>👤</span>我的</div></div>
+        </div><div style="margin-top:10px;font-size:13px;color:#6b7280">M5 扫码提单(基层服务)</div></div>
+
+      </div>
+
+      <div class="card">
+        <div class="card-title"><b>移动端设计说明</b></div>
+        <div style="font-size:13.5px;line-height:2;color:#374151">
+          · <b>AOA 会签是移动端最高优先级场景</b>:超时前手机推送,点开即确认,强制填意见;<br>
+          · <b>扫码提单支持免登录</b>:外部商户 / 游客也能报修,自动流转到责任主体值班岗;<br>
+          · <b>汇报只看不填</b>:汇报由系统自动生成,移动端纯阅读 + 下钻;<br>
+          · <b>管理类操作不进移动端</b>(目标拆解、考核、人才池),保持轻量;<br>
+          · 大字号、高对比、底部 Tab 五入口,适配 60 后 ~ 00 后全年龄段使用习惯。
+        </div>
+      </div>
+
+      <footer class="proto-note">产业协同平台 · 高保真原型 · 移动端(M1~M5)</footer>
+    </div>
+  </main>
+</div>
+<button class="float-ai" title="AI 助手">🤖</button>
+</body>
+</html>

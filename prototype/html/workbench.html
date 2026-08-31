@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>板块工作台 · 产业协同平台</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar">
+    <div class="logo"><span class="mark">◆</span><span>产业协同平台<small>内部协作作战系统</small></span></div>
+    <nav class="nav">
+      <div class="nav-group">总览</div>
+      <a href="index.html"><span class="ic">📊</span>驾驶舱</a>
+      <a class="active" href="workbench.html"><span class="ic">🗂</span>板块工作台</a>
+      <div class="nav-group">业务</div>
+      <a href="goals.html"><span class="ic">🌳</span>目标树</a>
+      <a href="project.html"><span class="ic">📁</span>项目库</a>
+      <a href="aoa-new.html"><span class="ic">🤝</span>AOA 协作</a>
+      <a href="reports.html"><span class="ic">📈</span>汇报流</a>
+      <a href="knowledge.html"><span class="ic">📚</span>知识库</a>
+      <div class="nav-group">组织</div>
+      <a href="talent.html"><span class="ic">👥</span>人才池</a>
+      <a href="review.html"><span class="ic">🎯</span>考核筛选</a>
+      <a href="training.html"><span class="ic">🎓</span>培训考试</a>
+      <div class="nav-group">服务</div>
+      <a href="service.html"><span class="ic">🔧</span>基层服务</a>
+      <a href="mobile.html"><span class="ic">📱</span>移动端预览</a>
+    </nav>
+    <div class="sidebar-foot">数据自主存储 · 区块链存证<br>v3.0 原型 · 2026-08-30</div>
+  </aside>
+
+  <main class="main">
+    <div class="topbar">
+      <h1>工作台 · 种植与基地管理</h1>
+      <div class="search">🔍 搜索:项目 / 人员 / 知识…</div>
+      <div class="bell">🔔<i>7</i></div>
+      <div class="user-chip">
+        <div class="meta"><b>王建国</b><span>板块负责人 · L2</span></div>
+        <div class="avatar av-2">王</div>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="page-head">
+        <div><h2>板块工作台</h2><div class="sub">法人主体:天府本草农业科技有限公司 · 跨主体信息默认共享</div></div>
+        <div><button class="btn btn-ghost">⊕ 新建项目</button> <a href="aoa-new.html"><button class="btn btn-primary">🤝 发起 AOA</button></a></div>
+      </div>
+
+      <div class="grid g4">
+        <div class="card stat"><div class="label">板块目标 · 建成3个规范化基地</div><div class="value">78<small>%</small></div><div class="trend up">▲ 3% 较上周 · 🟢 健康</div></div>
+        <div class="card stat"><div class="label">我的项目</div><div class="value">2<small>进行中</small></div><div class="trend up">0 逾期 · 1 卡点</div></div>
+        <div class="card stat"><div class="label">团队在岗</div><div class="value">12<small>/ 15</small></div><div class="trend flat">2 人外出 · 1 人超载 ⚠</div></div>
+        <div class="card stat"><div class="label">待我处理</div><div class="value">3<small>件</small></div><div class="trend" style="color:#b45309">AOA 确认 2 · 拆解待确认 1</div></div>
+      </div>
+
+      <div class="grid g2-1 mt">
+        <!-- 共识录入 -> AI 拆解 -->
+        <div class="card">
+          <div class="card-title"><b>📥 共识录入 → AI 逐层拆解</b><span class="badge b-ok">核心功能</span></div>
+          <div class="form-row">
+            <textarea class="textarea" placeholder="粘贴会议纪要 / 决策结论,或上传录音文件…&#10;示例:「8/29 总经办会决议:红原基地二期 10 月前完成选址,用地对接同步启动,预算 900 万以内。」"></textarea>
+          </div>
+          <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px">
+            <button class="btn btn-plain btn-sm">📎 传文件</button>
+            <button class="btn btn-plain btn-sm">🎙 上传录音</button>
+            <button class="btn btn-plain btn-sm">📖 从知识库引用</button>
+          </div>
+          <div class="n-info notice" style="margin:0">🤖 AI 将按 <b>L2 板块 → L3 项目 → L4 任务</b> 生成拆解草案,人工确认责任人和期限后下发。任务自动标注共识来源,可全程溯源。</div>
+          <button class="btn btn-primary btn-lg mt" style="width:100%">⚡ 开始拆解</button>
+        </div>
+        <!-- 团队负荷 -->
+        <div class="card">
+          <div class="card-title"><b>团队负荷(本周)</b><span class="more">人才池 ›</span></div>
+          <div style="padding:6px 0">
+            <div style="display:flex;justify-content:space-between;font-size:13.5px;margin-bottom:5px">李川(项目主管)<b>87%</b></div>
+            <div class="track"><div class="fill" style="width:87%"></div></div>
+          </div>
+          <div style="padding:6px 0">
+            <div style="display:flex;justify-content:space-between;font-size:13.5px;margin-bottom:5px">赵苗(执行专员)<b>50%</b></div>
+            <div class="track"><div class="fill" style="width:50%"></div></div>
+          </div>
+          <div style="padding:6px 0">
+            <div style="display:flex;justify-content:space-between;font-size:13.5px;margin-bottom:5px;color:#b91c1c">周文(执行专员)⚠ 超载<b>98%</b></div>
+            <div class="track"><div class="fill risk" style="width:98%"></div></div>
+          </div>
+          <div style="padding:6px 0">
+            <div style="display:flex;justify-content:space-between;font-size:13.5px;margin-bottom:5px">陈码(执行专员)<b>38%</b></div>
+            <div class="track"><div class="fill" style="width:38%"></div></div>
+          </div>
+          <div class="n-warn notice" style="margin:12px 0 0">周文超载 98%,系统建议将「巡检数据录入」转派给陈码(画像匹配度 81%)<button class="btn btn-ghost btn-sm" style="margin-left:6px">一键转派</button></div>
+        </div>
+      </div>
+
+      <!-- 下属项目 -->
+      <div class="card mt">
+        <div class="card-title"><b>下属项目</b><span class="more">进入项目库 ›</span></div>
+        <table class="tbl">
+          <tr><th>项目</th><th>进度</th><th>健康度</th><th>负责人</th><th>最近动态</th><th></th></tr>
+          <tr><td class="strong">P-001 川贝母规范化种植基地一期</td><td style="min-width:150px"><div class="track"><div class="fill warn" style="width:62%"></div></div></td><td><span class="badge b-warn">🟡 关注</span></td><td>李川 · 项目主管</td><td style="color:#6b7280;font-size:13px">用地审批卡点 21 天,已升级</td><td><a href="project.html"><button class="btn btn-ghost btn-sm">进入 ›</button></a></td></tr>
+          <tr><td class="strong">P-003 红原药材基地</td><td style="min-width:150px"><div class="track"><div class="fill" style="width:30%"></div></div></td><td><span class="badge b-ok">🟢 正常</span></td><td>吴岭 · 项目主管</td><td style="color:#6b7280;font-size:13px">选址踏勘完成,平稳推进</td><td><button class="btn btn-ghost btn-sm">进入 ›</button></td></tr>
+        </table>
+      </div>
+
+      <!-- 板块目标树(简版) -->
+      <div class="card mt">
+        <div class="card-title"><b>板块目标树(L2 → L3)</b><span class="more">进入全局目标树 ›</span></div>
+        <ul class="tree">
+          <li><div class="node-row"><span class="caret">▼</span><span class="lvl lvl-2">L2</span><b>建成 3 个规范化种植基地</b><span class="badge b-ok">78%</span><span class="dot ok"></span></div>
+            <ul>
+              <li><div class="node-row"><span class="caret">-</span><span class="lvl lvl-3">L3</span>P-001 川贝母基地一期 <span class="badge b-warn">62%</span><span class="dot warn"></span><span style="font-size:12.5px;color:#6b7280">李川</span></div></li>
+              <li><div class="node-row"><span class="caret">-</span><span class="lvl lvl-3">L3</span>P-003 红原药材基地 <span class="badge b-ok">30%</span><span class="dot ok"></span><span style="font-size:12.5px;color:#6b7280">吴岭</span></div></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <footer class="proto-note">产业协同平台 · 高保真原型 · 板块负责人视角(P1)</footer>
+    </div>
+  </main>
+</div>
+<button class="float-ai" title="AI 助手">🤖</button>
+</body>
+</html>

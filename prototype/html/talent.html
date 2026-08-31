@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>人才池 · 产业协同平台</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+.pcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;transition:.15s}
+.pcard:hover{border-color:var(--green-600);box-shadow:0 4px 14px rgba(12,107,82,.1)}
+.pcard .hd{display:flex;gap:12px;align-items:center}
+.pcard .nm{font-weight:700;font-size:15px}
+.pcard .rl{font-size:12.5px;color:var(--text-2)}
+.pcard .fit{margin-top:10px;font-size:12.5px;color:var(--text-2);display:flex;justify-content:space-between}
+.mini-track{height:6px;border-radius:4px;background:#edf1ef;overflow:hidden;margin-top:4px}
+.mini-fill{height:100%;background:linear-gradient(90deg,var(--green-500),var(--green-600))}
+</style>
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar">
+    <div class="logo"><span class="mark">◆</span><span>产业协同平台<small>内部协作作战系统</small></span></div>
+    <nav class="nav">
+      <div class="nav-group">总览</div>
+      <a href="index.html"><span class="ic">📊</span>驾驶舱</a>
+      <a href="workbench.html"><span class="ic">🗂</span>板块工作台</a>
+      <div class="nav-group">业务</div>
+      <a href="goals.html"><span class="ic">🌳</span>目标树</a>
+      <a href="project.html"><span class="ic">📁</span>项目库</a>
+      <a href="aoa-new.html"><span class="ic">🤝</span>AOA 协作</a>
+      <a href="reports.html"><span class="ic">📈</span>汇报流</a>
+      <a href="knowledge.html"><span class="ic">📚</span>知识库</a>
+      <div class="nav-group">组织</div>
+      <a class="active" href="talent.html"><span class="ic">👥</span>人才池</a>
+      <a href="review.html"><span class="ic">🎯</span>考核筛选</a>
+      <a href="training.html"><span class="ic">🎓</span>培训考试</a>
+      <div class="nav-group">服务</div>
+      <a href="service.html"><span class="ic">🔧</span>基层服务</a>
+      <a href="mobile.html"><span class="ic">📱</span>移动端预览</a>
+    </nav>
+    <div class="sidebar-foot">数据自主存储 · 区块链存证<br>v3.0 原型 · 2026-08-30</div>
+  </aside>
+
+  <main class="main">
+    <div class="topbar">
+      <h1>人才池 · 15 人</h1>
+      <div class="search">🔍 搜索:姓名 / 擅长领域…</div>
+      <div class="bell">🔔<i>2</i></div>
+      <div class="user-chip">
+        <div class="meta"><b>人力共享中心</b><span>HR · 职能支撑板块</span></div>
+        <div class="avatar av-6">人</div>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="page-head">
+        <div><h2>人才画像池</h2><div class="sub">简历(人填)+ 流程数据(系统自动采集)· 支撑数十人 -> 数万人规模</div></div>
+        <a href="talent-profile.html"><button class="btn btn-primary">🤖 AI 匹配:输入业务需求找人</button></a>
+      </div>
+
+      <div style="display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap">
+        <span class="badge b-gray">全部板块 ▾</span>
+        <span class="badge b-gray">全部层级 ▾</span>
+        <span class="badge b-gray">擅长:中药材种植 ▾</span>
+        <span class="badge b-warn">画像待补全 3 人</span>
+      </div>
+
+      <div class="grid g3">
+        <div class="pcard"><div class="hd"><div class="avatar av-2">李</div><div><div class="nm">李川</div><div class="rl">项目主管 L3 · 种植板块 · 在岗 2年3个月</div></div></div>
+          <div style="margin-top:10px"><span class="chip">#种植</span><span class="chip">#基地管理</span><span class="chip">#溯源</span></div>
+          <div class="fit"><span>画像完整度 <b>92%</b></span><span>参与度 <b>9.1</b></span></div>
+          <div class="mini-track"><div class="mini-fill" style="width:92%"></div></div></div>
+        <div class="pcard"><div class="hd"><div class="avatar av-3">赵</div><div><div class="nm">赵苗</div><div class="rl">执行专员 L4 · 种植板块 · 在岗 1年1个月</div></div></div>
+          <div style="margin-top:10px"><span class="chip">#育苗</span><span class="chip">#田间数据</span></div>
+          <div class="fit"><span>画像完整度 <b>88%</b></span><span>参与度 <b>8.4</b></span></div>
+          <div class="mini-track"><div class="mini-fill" style="width:88%"></div></div></div>
+        <div class="pcard" style="border-color:#f3c96b"><div class="hd"><div class="avatar av-5">周</div><div><div class="nm">周文</div><div class="rl">执行专员 L4 · 种植板块 · 在岗 3年</div></div></div>
+          <div style="margin-top:10px"><span class="chip">#政企对接</span><span class="chip">#用地审批</span></div>
+          <div class="fit"><span>画像完整度 <b>81%</b></span><span>参与度 <b>6.2 ↘</b></span></div>
+          <div class="mini-track"><div class="mini-fill" style="width:81%;background:linear-gradient(90deg,#fbbf24,#d97706)"></div></div></div>
+        <div class="pcard" style="border-style:dashed"><div class="hd"><div class="avatar av-4">陈</div><div><div class="nm">陈码</div><div class="rl">执行专员 L4 · 种植板块 · 在岗 5个月</div></div></div>
+          <div style="margin-top:10px"><span class="chip">#溯源系统</span><span class="chip">#数据录入</span></div>
+          <div class="fit"><span>画像完整度 <b style="color:#b45309">55% ⚠</b></span><span>参与度 <b>8.8</b></span></div>
+          <div class="mini-track"><div class="mini-fill" style="width:55%"></div></div>
+          <div style="font-size:12px;color:#b45309;margin-top:6px">已向本人和 HR 推送补全任务(补全得 🐼 +5)</div></div>
+        <div class="pcard"><div class="hd"><div class="avatar av-6">吴</div><div><div class="nm">吴岭</div><div class="rl">项目主管 L3 · 种植板块 · 在岗 1年8个月</div></div></div>
+          <div style="margin-top:10px"><span class="chip">#高原种植</span><span class="chip">#基地选址</span></div>
+          <div class="fit"><span>画像完整度 <b>76%</b></span><span>参与度 <b>7.5</b></span></div>
+          <div class="mini-track"><div class="mini-fill" style="width:76%"></div></div></div>
+        <div class="pcard"><div class="hd"><div class="avatar av-1">王</div><div><div class="nm">王建国</div><div class="rl">板块负责人 L2 · 种植板块 · 在岗 4年</div></div></div>
+          <div style="margin-top:10px"><span class="chip">#中药材栽培</span><span class="chip">#团队管理</span><span class="chip">#政企</span></div>
+          <div class="fit"><span>画像完整度 <b>98%</b></span><span>参与度 <b>9.6</b></span></div>
+          <div class="mini-track"><div class="mini-fill" style="width:98%"></div></div></div>
+      </div>
+
+      <div style="text-align:center;margin-top:16px;color:#9aa5a0;font-size:13px">… 滚动加载(15 / 全组织)…</div>
+
+      <footer class="proto-note">产业协同平台 · 高保真原型 · 人才池(H1)</footer>
+    </div>
+  </main>
+</div>
+<button class="float-ai" title="AI 助手">🤖</button>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AOA 发起 · 产业协同平台</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar">
+    <div class="logo"><span class="mark">◆</span><span>产业协同平台<small>内部协作作战系统</small></span></div>
+    <nav class="nav">
+      <div class="nav-group">总览</div>
+      <a href="index.html"><span class="ic">📊</span>驾驶舱</a>
+      <a href="workbench.html"><span class="ic">🗂</span>板块工作台</a>
+      <div class="nav-group">业务</div>
+      <a href="goals.html"><span class="ic">🌳</span>目标树</a>
+      <a href="project.html"><span class="ic">📁</span>项目库</a>
+      <a class="active" href="aoa-new.html"><span class="ic">🤝</span>AOA 协作</a>
+      <a href="reports.html"><span class="ic">📈</span>汇报流</a>
+      <a href="knowledge.html"><span class="ic">📚</span>知识库</a>
+      <div class="nav-group">组织</div>
+      <a href="talent.html"><span class="ic">👥</span>人才池</a>
+      <a href="review.html"><span class="ic">🎯</span>考核筛选</a>
+      <a href="training.html"><span class="ic">🎓</span>培训考试</a>
+      <div class="nav-group">服务</div>
+      <a href="service.html"><span class="ic">🔧</span>基层服务</a>
+      <a href="mobile.html"><span class="ic">📱</span>移动端预览</a>
+    </nav>
+    <div class="sidebar-foot">数据自主存储 · 区块链存证<br>v3.0 原型 · 2026-08-30</div>
+  </aside>
+
+  <main class="main">
+    <div class="topbar">
+      <h1>AOA · 发起协作确认</h1>
+      <div class="search">🔍 搜索:项目 / 人员 / 知识…</div>
+      <div class="bell">🔔<i>7</i></div>
+      <div class="user-chip">
+        <div class="meta"><b>王建国</b><span>板块负责人 · L2</span></div>
+        <div class="avatar av-2">王</div>
+      </div>
+    </div>
+
+    <div class="content" style="max-width:900px">
+      <div class="crumb"><a href="workbench.html">工作台</a> / AOA / 发起</div>
+      <div class="page-head">
+        <div><h2>发起 AOA 协作确认</h2><div class="sub">协作导向:发起即自动拉通全链路相关人员,没有单点拍板</div></div>
+      </div>
+
+      <div class="step-tabs">
+        <div class="ok">① 选类型 ✓</div>
+        <div class="on">② 填内容</div>
+        <div>③ 确认节点</div>
+        <div>④ 提交</div>
+      </div>
+
+      <div class="card">
+        <div class="card-title"><b>Step ① 协作类型</b></div>
+        <div class="type-grid">
+          <div class="type-card on"><span class="ti">🧱</span>项目立项</div>
+          <div class="type-card"><span class="ti">🛒</span>大额采购</div>
+          <div class="type-card"><span class="ti">📝</span>合同签订</div>
+          <div class="type-card"><span class="ti">👤</span>人事任免</div>
+          <div class="type-card"><span class="ti">⚙</span>自定义</div>
+        </div>
+      </div>
+
+      <div class="card mt">
+        <div class="card-title"><b>Step ② 协作内容</b></div>
+        <div class="form-row"><label>标的 <span>(自动关联目标树节点)</span></label><input class="input" value="P-001 川贝母基地一期 · 育苗棚建设(第 2 批 3 座)"></div>
+        <div class="grid g2">
+          <div class="form-row"><label>金额</label><input class="input" value="¥ 380 万"></div>
+          <div class="form-row"><label>周期</label><input class="input" value="2026-09-01 ~ 2026-11-30(90 天)"></div>
+        </div>
+        <div class="form-row"><label>附件 <span>(决策人可直接全屏查看,无需下载)</span></label>
+          <div style="display:flex;gap:8px;flex-wrap:wrap">
+            <span class="badge b-gray">📑 评估表.pdf</span>
+            <span class="badge b-gray">🎥 基地实拍视频.mp4</span>
+            <span class="badge b-gray">📷 现场照片 × 6</span>
+            <button class="btn btn-plain btn-sm">⊕ 上传</button>
+          </div>
+        </div>
+        <div class="form-row"><label>说明</label><textarea class="textarea">按 8/12 总经办会共识执行,预算已在年度盘子内。供应商比选记录见附件评估表。</textarea></div>
+      </div>
+
+      <div class="card mt">
+        <div class="card-title"><b>Step ③ 系统自动拉通节点</b><span class="badge b-ok">按规则推荐 · 可增删</span></div>
+        <label class="check"><input type="checkbox" checked><div><b>业务确认</b> — 种植板块负责人 · 王建国<div class="sub">发起人所在板块默认必选</div></div></label>
+        <label class="check"><input type="checkbox" checked><div><b>财务确认</b> — 财务共享中心 · 钱总<div class="sub">金额 > 100 万自动勾选</div></div></label>
+        <label class="check"><input type="checkbox"><div><b>法务确认</b> — 法务共享中心<div class="sub">金额 > 500 万自动勾选(本单 380 万未触发)</div></div></label>
+        <label class="check"><input type="checkbox" checked><div><b>执行层会签</b> — 项目主管 李川 + 执行专员 赵苗 / 周文<div class="sub">实际执行者必须动脑确认,防"上面拍完下面落不了地"</div></div></label>
+        <label class="check"><input type="checkbox" checked><div><b>终审</b> — 核心决策人 · 张远山<div class="sub">进入决策人驾驶舱"待我决策"</div></div></label>
+        <label class="check"><input type="checkbox"><div><b>知会</b> — 只看不确认<div class="sub">+ 选择知会人</div></div></label>
+      </div>
+
+      <div class="n-ok notice mt">💡 提交后:全链路人员立即收到确认任务(Web + 移动推送);每个节点必须填写 ≥20 字意见;节点超时自动升级提醒。</div>
+
+      <div style="display:flex;justify-content:flex-end;gap:10px;margin-top:20px">
+        <button class="btn btn-plain">取消</button>
+        <a href="aoa-detail.html"><button class="btn btn-primary btn-lg">预览并提交 →</button></a>
+      </div>
+
+      <footer class="proto-note">产业协同平台 · 高保真原型 · AOA 发起(A1)</footer>
+    </div>
+  </main>
+</div>
+<button class="float-ai" title="AI 助手">🤖</button>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>基层服务 · 产业协同平台</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+.svc-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.svc{border:1.5px solid var(--line);border-radius:13px;padding:18px 10px;text-align:center;cursor:pointer;background:#fff;transition:.15s}
+.svc:hover{border-color:var(--green-600);background:#f4faf7}
+.svc .si{font-size:30px;display:block;margin-bottom:8px}
+.svc b{font-size:14.5px}
+.svc small{display:block;color:var(--text-2);font-size:12px;margin-top:3px}
+@media(max-width:900px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
+</style>
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar">
+    <div class="logo"><span class="mark">◆</span><span>产业协同平台<small>内部协作作战系统</small></span></div>
+    <nav class="nav">
+      <div class="nav-group">总览</div>
+      <a href="index.html"><span class="ic">📊</span>驾驶舱</a>
+      <a href="workbench.html"><span class="ic">🗂</span>板块工作台</a>
+      <div class="nav-group">业务</div>
+      <a href="goals.html"><span class="ic">🌳</span>目标树</a>
+      <a href="project.html"><span class="ic">📁</span>项目库</a>
+      <a href="aoa-new.html"><span class="ic">🤝</span>AOA 协作</a>
+      <a href="reports.html"><span class="ic">📈</span>汇报流</a>
+      <a href="knowledge.html"><span class="ic">📚</span>知识库</a>
+      <div class="nav-group">组织</div>
+      <a href="talent.html"><span class="ic">👥</span>人才池</a>
+      <a href="review.html"><span class="ic">🎯</span>考核筛选</a>
+      <a href="training.html"><span class="ic">🎓</span>培训考试</a>
+      <div class="nav-group">服务</div>
+      <a class="active" href="service.html"><span class="ic">🔧</span>基层服务</a>
+      <a href="mobile.html"><span class="ic">📱</span>移动端预览</a>
+    </nav>
+    <div class="sidebar-foot">数据自主存储 · 区块链存证<br>v3.0 原型 · 2026-08-30</div>
+  </aside>
+
+  <main class="main">
+    <div class="topbar">
+      <h1>基层服务 · 工单中心</h1>
+      <div class="search">🔍 搜索:工单号 / 位置…</div>
+      <div class="bell">🔔<i>5</i></div>
+      <div class="user-chip">
+        <div class="meta"><b>绿道运营值班</b><span>天府绿道场景</span></div>
+        <div class="avatar av-3">绿</div>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="page-head">
+        <div><h2>全场景基层服务</h2><div class="sub">天府绿道场景 · 用户提交来源:Web / 移动端 / 现场扫码(免登录)</div></div>
+        <div>
+          <span class="badge b-gray" style="margin-right:6px">全部 27</span>
+          <span class="badge b-warn" style="margin-right:6px">待接 5</span>
+          <span class="badge b-info" style="margin-right:6px">处理中 15</span>
+          <span class="badge b-ok">已完成 7</span>
+        </div>
+      </div>
+
+      <!-- 服务入口 -->
+      <div class="card">
+        <div class="card-title"><b>服务入口(用户提交侧)</b><span style="font-size:12.5px;color:#6b7280">选类型 -> 拍照 -> 一句话描述 -> 提交,30 秒内完成</span></div>
+        <div class="svc-grid">
+          <div class="svc"><span class="si">🔧</span><b>报修</b><small>设备 / 设施损坏</small></div>
+          <div class="svc"><span class="si">🛒</span><b>集采</b><small>门店补货 / 物料</small></div>
+          <div class="svc"><span class="si">💰</span><b>销售</b><small>农产品 / 门票等</small></div>
+          <div class="svc"><span class="si">🏢</span><b>物业</b><small>绿化 / 保洁 / 安保</small></div>
+          <div class="svc"><span class="si">📋</span><b>其他</b><small>任意需求</small></div>
+        </div>
+      </div>
+
+      <!-- 工单列表 -->
+      <div class="card mt">
+        <div class="card-title"><b>工单列表(自动流转,无需人工派单)</b><span class="badge b-ok">按类型+位置自动匹配责任主体</span></div>
+        <table class="tbl">
+          <tr><th>工单</th><th>类型</th><th>内容</th><th>提交方式</th><th>流转状态</th><th>时效</th></tr>
+          <tr style="background:#fdf3f3"><td class="strong">#0830-012</td><td><span class="badge b-risk">🟥 紧急</span></td><td>绿道 3 号驿站水管爆裂</td><td style="color:#6b7280;font-size:13px">现场扫码 · 08-30 08:41</td><td><b>物业主体值班岗(李师傅)</b> · 已接单</td><td><b style="color:#dc2626">剩余响应 18 分钟</b></td></tr>
+          <tr><td class="strong">#0830-009</td><td><span class="badge b-info">🛒 集采</span></td><td>驿站便利店补货申请(饮料 × 50 箱)</td><td style="color:#6b7280;font-size:13px">移动端 · 08-30 07:55</td><td>集采组 · 待接单</td><td>常规时效 4h</td></tr>
+          <tr><td class="strong">#0830-005</td><td><span class="badge b-info">💰 销售</span></td><td>绿道农产品摊位申请(周末市集)</td><td style="color:#6b7280;font-size:13px">Web · 08-29 16:20</td><td>运营组 · 已接单</td><td>常规时效 24h</td></tr>
+          <tr><td class="strong">#0829-031</td><td><span class="badge b-ok">🏢 物业</span></td><td>园区绿化修剪</td><td style="color:#6b7280;font-size:13px">移动端 · 08-28 11:02</td><td><span class="badge b-ok">✅ 已完成</span> 耗时 1.5 天</td><td>-</td></tr>
+        </table>
+        <div class="n-info notice mt" style="margin-bottom:0">⚙ 规则:按类型 + 位置自动匹配责任主体与值班人;超时自动升级到板块负责人;全部工单数据进入对应主体运营报表(跨主体共享)。</div>
+      </div>
+
+      <footer class="proto-note">产业协同平台 · 高保真原型 · 基层服务(S1)</footer>
+    </div>
+  </main>
+</div>
+<button class="float-ai" title="AI 助手">🤖</button>
+</body>
+</html>

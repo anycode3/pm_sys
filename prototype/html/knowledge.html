@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>知识库 · 产业协同平台</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+.kb{display:grid;grid-template-columns:190px 1fr 340px;gap:16px;align-items:start}
+.kb-cat a{display:block;padding:8px 12px;border-radius:8px;font-size:14px;margin:2px 0}
+.kb-cat a.on{background:#eef7f3;color:var(--green-700);font-weight:700}
+.kb-cat a:hover{background:#f2f6f4}
+.chat{display:flex;flex-direction:column;gap:12px}
+.msg{border-radius:12px;padding:12px 14px;font-size:13.5px;line-height:1.7;max-width:92%}
+.msg.me{background:var(--green-600);color:#fff;align-self:flex-end}
+.msg.ai{background:#f8faf9;border:1px solid var(--line)}
+.msg .src{margin-top:8px;padding-top:8px;border-top:1px dashed var(--line);font-size:12.5px;color:var(--text-2)}
+@media(max-width:1100px){.kb{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar">
+    <div class="logo"><span class="mark">◆</span><span>产业协同平台<small>内部协作作战系统</small></span></div>
+    <nav class="nav">
+      <div class="nav-group">总览</div>
+      <a href="index.html"><span class="ic">📊</span>驾驶舱</a>
+      <a href="workbench.html"><span class="ic">🗂</span>板块工作台</a>
+      <div class="nav-group">业务</div>
+      <a href="goals.html"><span class="ic">🌳</span>目标树</a>
+      <a href="project.html"><span class="ic">📁</span>项目库</a>
+      <a href="aoa-new.html"><span class="ic">🤝</span>AOA 协作</a>
+      <a href="reports.html"><span class="ic">📈</span>汇报流</a>
+      <a class="active" href="knowledge.html"><span class="ic">📚</span>知识库</a>
+      <div class="nav-group">组织</div>
+      <a href="talent.html"><span class="ic">👥</span>人才池</a>
+      <a href="review.html"><span class="ic">🎯</span>考核筛选</a>
+      <a href="training.html"><span class="ic">🎓</span>培训考试</a>
+      <div class="nav-group">服务</div>
+      <a href="service.html"><span class="ic">🔧</span>基层服务</a>
+      <a href="mobile.html"><span class="ic">📱</span>移动端预览</a>
+    </nav>
+    <div class="sidebar-foot">数据自主存储 · 区块链存证<br>v3.0 原型 · 2026-08-30</div>
+  </aside>
+
+  <main class="main">
+    <div class="topbar">
+      <h1>知识库 · AI 问答</h1>
+      <div class="search">🔍 搜索:知识 / 文档 / 问答…</div>
+      <div class="bell">🔔<i>3</i></div>
+      <div class="user-chip">
+        <div class="meta"><b>陈码</b><span>执行专员 · L4</span></div>
+        <div class="avatar av-4">陈</div>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="page-head">
+        <div><h2>全量内部知识库</h2><div class="sub">跨主体共享 · 上传内容得 🐼 熊猫币 · AI 回答必带来源与置信度</div></div>
+        <button class="btn btn-primary">⊕ 上传内容(得币)</button>
+      </div>
+
+      <div class="kb">
+        <!-- 分类 -->
+        <div class="card kb-cat">
+          <div class="card-title" style="margin-bottom:8px"><b>知识域</b></div>
+          <a class="on">📚 产业链规则</a>
+          <a>💰 投融建管退</a>
+          <a>🔗 产业融合</a>
+          <a>🏛 机构生态</a>
+          <a>💼 板块经验</a>
+          <a>🟢 绿道运营</a>
+        </div>
+
+        <!-- 内容列表 -->
+        <div class="card">
+          <div style="display:flex;gap:8px;margin-bottom:10px;flex-wrap:wrap">
+            <span class="badge b-gray">全部主体 ▾</span>
+            <span class="badge b-gray">我的板块 ▾</span>
+            <span class="badge b-gray">最近被引 ▾</span>
+          </div>
+          <div class="row"><span class="badge b-ok">规范</span><div class="grow"><div class="title">川贝母栽培规范 v3</div><div class="desc">王建国 · 06-12 上传 · 被引 38 次 · 覆盖海拔/土壤/忌连作等 12 项要点</div></div><span class="arrow">›</span></div>
+          <div class="row"><span class="badge b-info">手册</span><div class="grow"><div class="title">中药材溯源系统操作手册</div><div class="desc">陈码 · 08-20 上传 · 被引 12 次 · 新人上岗考试已引用此文档出题</div></div><span class="arrow">›</span></div>
+          <div class="row"><span class="badge b-gold">共享</span><div class="grow"><div class="title">天府绿道物业集采白名单</div><div class="desc">来自:绿道运营主体 · 07-30 · 跨主体共享 · 被引 9 次</div></div><span class="arrow">›</span></div>
+          <div class="row"><span class="badge b-gold">共享</span><div class="grow"><div class="title">一带一路出口合规要点(中药材类)</div><div class="desc">来自:渠道销售主体 · 08-15 · 跨主体共享 · 被引 7 次</div></div><span class="arrow">›</span></div>
+          <div class="row"><span class="badge b-gray">评估</span><div class="grow"><div class="title">P-001 育苗棚第 2 批 · 供应商比选评估表</div><div class="desc">王建国 · 08-30 · AOA 归档自动入库</div></div><span class="arrow">›</span></div>
+          <div class="row"><span class="badge b-gray">经验</span><div class="grow"><div class="title">高原基地选址踩坑记录(红原)</div><div class="desc">吴岭 · 08-18 · 被引 5 次 · 含 3 个真实案例</div></div><span class="arrow">›</span></div>
+        </div>
+
+        <!-- AI 问答 -->
+        <div class="card">
+          <div class="card-title"><b>🤖 AI 助手(随身问答)</b><span class="badge b-ok">带来源</span></div>
+          <div class="chat">
+            <div class="msg me">川贝母种植的海拔要求是什么?</div>
+            <div class="msg ai">依据《川贝母栽培规范 v3》:<br>① 适宜海拔 <b>3000-4500 米</b>,我区红原基地(3500 米)满足;<br>② 忌连作,同一地块需间隔 3 年以上;<br>③ 土壤要求疏松、排水良好的砂质壤土,pH 6.5-7.5。<div class="src">📎 来源:王建国上传 · 06-12 · 置信度 <b>高</b> · <a href="#" style="color:var(--green-600)">查看原文</a></div></div>
+            <div class="msg ai" style="align-self:flex-start;background:#f0fdf4;border-color:#c4ead2">💡 相关:<a href="#" style="color:var(--green-700)">红原基地选址报告</a> 中已包含海拔与土壤检测结果<div class="src">👍 有用 &nbsp;|&nbsp; 🔍 追问 &nbsp;|&nbsp; 🎤 语音提问</div></div>
+          </div>
+          <div style="display:flex;gap:8px;margin-top:14px">
+            <input class="input" placeholder="问点什么…(全量知识库范围)">
+            <button class="btn btn-primary">发送</button>
+          </div>
+          <div style="font-size:12px;color:#6b7280;margin-top:8px">答题不了的会自动转给领域骨干(得币答谢),沉淀回知识库</div>
+        </div>
+      </div>
+
+      <footer class="proto-note">产业协同平台 · 高保真原型 · 知识库与 AI 问答(K1)</footer>
+    </div>
+  </main>
+</div>
+<button class="float-ai" title="AI 助手">🤖</button>
+</body>
+</html>
